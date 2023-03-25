@@ -1,0 +1,22 @@
+<h1>parent component</h1>
+
+<div class="maindiv">
+    <div class="mydiv">
+        <label>first name</label><br>
+        <input type="text" placeholder="your first name" value="{{allinput.first}}" readonly><br><br>
+
+        <label>last name</label><br>
+        <input type="text" placeholder="your last name" value="{{allinput.last}}" readonly><br><br>
+
+        <label>email address</label><br>
+        <input type="text" placeholder="your email address" value="{{allinput.email}}" readonly><br><br>
+
+        <label>mobile number</label><br>
+        <input type="text" placeholder="your mobile number" value="{{allinput.number}}" readonly><br><br>
+
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<app-child (messagesent)="myevent($event)"></app-child>

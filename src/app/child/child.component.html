@@ -1,0 +1,22 @@
+<h1>child component</h1>
+
+
+<div class="maindiv">
+    <div class="mydiv">
+        <label>first name</label><br>
+        <input type="text" [(ngModel)]="inputone" placeholder="your first name" ><br><br>
+
+        <label>last name</label><br>
+        <input type="text" [(ngModel)]="inputtwo" placeholder="your last name" ><br><br>
+
+        <label>email address</label><br>
+        <input type="text" [(ngModel)]="inputthree" placeholder="your email address" ><br><br>
+
+        <label>mobile number</label><br>
+        <input type="text" [(ngModel)]="inputfour" placeholder="your mobile number" maxlength="10"><br><br>
+
+        <input (click)="clicked()" type="button" value="submit" class="btn">
+    </div>
+</div>
+
+
